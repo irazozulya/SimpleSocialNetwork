@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "AddUser";
+}
+
+<h2>New user</h2>
+
+<body>
+    <div>
+        <form method="post" action="">
+            <table>
+                <tr>
+                    <td><p>Enter the name of user</p></td>
+                    <td><input type="text" name="Name" /> </td>
+
+                </tr>
+                <tr>
+                    <td><p>Enter login</p></td>
+                    <td><input type="text" name="Login" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Enter password</p></td>
+                    <td><input type="text" name="Password" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Enter age</p></td>
+                    <td><input type="number" min="0" name="Age" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Add" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        @Html.ActionLink("Back to users", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+</body>
+

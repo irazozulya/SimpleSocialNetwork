@@ -1,0 +1,12 @@
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\bin\Debug\Wallet.DAL.dll.config
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\bin\Debug\Wallet.DAL.dll
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\bin\Debug\Wallet.DAL.pdb
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\obj\Debug\Wallet.DAL.csprojAssemblyReference.cache
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\obj\Debug\Wallet.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\obj\Debug\Wallet.DAL.csproj.CopyComplete
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\obj\Debug\Wallet.DAL.dll
+C:\Users\Мурыся\Desktop\Wallet\Wallet.DAL\obj\Debug\Wallet.DAL.pdb

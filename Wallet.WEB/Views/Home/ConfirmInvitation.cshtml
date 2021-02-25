@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "ConfirmInvitation";
+}
+
+<h2>Confirm invitation</h2>
+
+<body>
+    <div>
+        <form method="post" action="">
+            <table>
+                <tr>
+                    <td><p>Enter the id of invitation</p></td>
+                    <td><input type="number" min="1" name="Id" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Confirm" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        @Html.ActionLink("Back to users", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+</body>
+

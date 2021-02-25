@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WEB.MessageViewModel>
+
+@{
+    ViewBag.Title = "Message";
+}
+
+<h2>Messages</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mess)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SenderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateSent)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Mess)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SenderId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DateSent)
+    </td>
+</tr>
+    }
+
+</table>
+
+<div>
+    <table class="table">
+        <tr>
+            <td>
+                @Html.ActionLink("Back to Users", "Index")
+            </td>
+            <td>
+                @Html.ActionLink("Add new Message", "AddMessage")
+            </td>
+        </tr>
+    </table>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

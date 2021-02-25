@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "AddInvitation";
+}
+
+<h2>New invitation</h2>
+
+<body>
+    <div>
+        <form method="post" action="">
+            <table>
+                <tr>
+                    <td><p>Enter the sender's id</p></td>
+                    <td><input type="number" min="1" name="SenderId" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Enter the receiver's id</p></td>
+                    <td><input type="number" min="1" name="ReceiverId" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Enter the group id</p></td>
+                    <td><input type="number" min="1" name="GroupId" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Add" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        @Html.ActionLink("Back to users", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+</body>

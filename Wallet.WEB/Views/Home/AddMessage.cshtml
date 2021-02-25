@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "AddMessage";
+}
+
+<h2>New message</h2>
+
+<body>
+    <div>
+        <form method="post" action="">
+            <table>
+                <tr>
+                    <td><p>Enter the message</p></td>
+                    <td><input type="text" name="Mess" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Enter the sender's id</p></td>
+                    <td><input type="number" name="SenderId" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Enter the receiver's id</p></td>
+                    <td><input type="number" min="0" name="ReceiverId" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Add" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        @Html.ActionLink("Back to users", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+</body>

@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "AddGroup";
+}
+
+<h2>New group</h2>
+
+<body>
+    <div>
+        <form method="post" action="">
+            <table>
+                <tr>
+                    <td><p>Enter the name of group</p></td>
+                    <td><input type="text" name="Name" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Add" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+
+    <div>
+        @Html.ActionLink("Back to users", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+
+</body>
+

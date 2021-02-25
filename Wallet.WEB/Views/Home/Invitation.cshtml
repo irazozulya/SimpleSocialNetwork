@@ -1,0 +1,69 @@
+﻿@model IEnumerable<WEB.InvitationViewModel>
+
+@{
+    ViewBag.Title = "Invitation";
+}
+
+<h2>Invitations</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GroupId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReceiverId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SenderId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsConfirmed)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.GroupId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ReceiverId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.SenderId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.IsConfirmed)
+    </td>
+</tr>
+    }
+
+</table>
+<div>
+    <table class="table">
+        <tr>
+            <td>
+                @Html.ActionLink("Back to Users", "Index")
+            </td>
+            <td>
+                @Html.ActionLink("Accept the invitation", "ConfirmInvitation")
+            </td>
+            <td>
+                @Html.ActionLink("Add new invitation", "AddInvitation")
+            </td>
+        </tr>
+    </table>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
